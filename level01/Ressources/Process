@@ -1,0 +1,11 @@
+Since last tips was "john" something is to be done with password cracking with
+John the Ripper utility, so if we cat /etc/passwd it gives us :
+
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+scp -P 4242 flag00@172.16.216.128:/etc/passwd .
+
+so we give this to john the ripper which gives us :
+john --show passwd ~> flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash
+
+su flag01 pass:abcdefg then getflag

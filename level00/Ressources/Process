@@ -1,0 +1,15 @@
+find / -user flag00 2>/dev/null
+
+find all files from user flag00 and redirect errors to null for more visibility
+which returns : cdiiddwpgswtgt
+
+which is encoded by Caesar cipher:
+
+http://www.dcode.fr/chiffre-cesar
+-> par bruteforce -> +15 :
+nottoohardhere
+
+su flag00 
+pass : nottoohardhere
+
+getflag / cat /home/flag/flag00
