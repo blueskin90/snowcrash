@@ -1,0 +1,10 @@
+with ls we can see the file level02.pcap so we scp it.
+
+When opened with Wireshark we can see the data which were transiting via TCP, we can see a "login:" data, if we concatenate data which are coming right after, we get : "levelX\r" which means the login was levelX and the person typed enter (for us it will be "su flag02")
+then we see "password:"
+
+all datas coming next put end to end gives us : "ft_wandr(DEL)(DEL)(DEL)NDRel(DEL)L0L\r"
+
+which when considering the DEL command gives us : ft_waNDReL0L which is the password for flag02
+
+then we getflag and get the flag.
