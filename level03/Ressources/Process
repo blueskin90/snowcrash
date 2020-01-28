@@ -1,0 +1,3 @@
+We scp the file level03 on our computer, we decompile it and see that it calls the function system which takes as a parameter a string which is "/usr/bin/env echo Exploit me" so to crack it we do : export LOGNAME=flag03 USER=flag03 PATH=/tmp:$PATH
+
+and then in the /tmp folder we create a main.c file which does system("getflag") we compile as : gcc main.c -o echo and then we run the level03 program on the snowcrash vm which gives us the flag : qi0maab88jeaj46qoumi7maus
