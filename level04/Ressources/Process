@@ -1,0 +1,1 @@
+First we cat the file level04.pl we see that it echo the first parameter which is given as a x, and we see that the address is localhost:4747, so we open a browser with the ip of the vm:4242 and add at the end /?x=[whateverwewant] in our case `getflag` this way it display the flag for us
