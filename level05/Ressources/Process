@@ -1,3 +1,6 @@
-cat /var/mail/level05
-
+when we connect we see that we have a mail, so we cat /var/mail/level05
+which gives :
 */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+when we ls -l /usr/sbin/openarenaserver we see that it has the permissions as flag05 and if we cat it we see that it will execute all scripts in /opt/openarenaserver/.
+So we create script which does getflag > /tmp/flag chmod 777 this script and scp it to the SnowCrash VM and we wait 2 minutes for the cron to execute the script (we can verify that it was executed by doing a ls on /opt/openarenaserver/ then we cat /tmp/flag and we get : Check flag.Here is your token : viuaaale9huek52boumoomioc
