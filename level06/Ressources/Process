@@ -1,0 +1,5 @@
+first we scp the php file so we can put a correct indentation for it to be more readable.
+
+THEN WE STRUGGLE ><
+
+there must be something that the preg replace doesnt do, but still got no idea what is the usefulness of the y function, the x is called, but not the y ...
