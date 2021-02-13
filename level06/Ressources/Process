@@ -5,3 +5,11 @@ we see that the regex only accepts something like this in the file it reads from
 so we try something like : [x phpinfo()] and see that it displays it so we try something like : [x {${system(${z})}}] which will execute the second argument in a new terminal
 
 then we do : ~/level06 ourfile getflag and we get : wiok45aaoguiboiki2tuin6ub
+
+
+
+We can see the php script use the deprecated and vunerable regex 'e' modifier
+So the "/(\[x (.*)\])/e" regex will evaluate anything into the ".*" and call the 'y' function with it
+We write an exploit file to match the regex above
+
+[x ${`getflag`}]

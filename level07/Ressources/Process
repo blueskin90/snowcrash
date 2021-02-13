@@ -1,0 +1,5 @@
+We see that we have an executable.
+ so we `ltrace ./level07` and see that it does getegid and geteuid.
+Which are getting id of the person and the group who own the file which is level07 (how fortunate !)
+ and we see that it get the env variable "LOGNAME" does something important.
+so we try and see that when we do : env LOGNAME="something" ./level07 it echoes "something" so we try with \`getflag\` with the backticks so that when it gets echoed it gets run and we get our token
