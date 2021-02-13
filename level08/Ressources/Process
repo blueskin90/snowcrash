@@ -1,5 +1,5 @@
 we see that when given a file, it displays its content, but refuses to do it for ~/token
-so we try a Symlink exploit which is doing a simbolic link to the file we are interrested into
+so we try a Symlink exploit which is doing a symbolic link to the file we are interrested into
 
 ln -s ~/token /tmp/mylink
 
