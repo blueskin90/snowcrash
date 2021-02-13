@@ -1,5 +1,7 @@
 first we scp the php file so we can put a correct indentation for it to be more readable.
 
-THEN WE STRUGGLE ><
+we see that the regex only accepts something like this in the file it reads from first argument: [x ... ] and we see /e wich interprets as the result of the function called in the regex
 
-there must be something that the preg replace doesnt do, but still got no idea what is the usefulness of the y function, the x is called, but not the y ...
+so we try something like : [x phpinfo()] and see that it displays it so we try something like : [x {${system(${z})}}] which will execute the second argument in a new terminal
+
+then we do : ~/level06 ourfile getflag and we get : wiok45aaoguiboiki2tuin6ub
