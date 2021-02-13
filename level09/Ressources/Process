@@ -1,0 +1,5 @@
+we see that when we give a string to level09 it output something, so i tried something like : ./level09 aaaaaaaaaaaaa and got abcdefghijkl so i tried with 1111111111111111111 and got 123456789:;<=>?@ABC which seems to be each char + its position in the string, so i try    Coucou which should give me : Cpwfsz and when we try, we got the same, so we do a c program to decrypt the token file which might be encrypted the same.
+
+when we use our file compiled with the token file as a parameter we got : f3iji1ju5yuevaus41q1afiuq
+su flag09 with this as a password and then getflag gets us the flag
+
