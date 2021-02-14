@@ -1,7 +1,7 @@
 #!/bin/sh
 #!/usr/bin/expect -f
-IP="192.168.123.129"
-LEVEL=7
+IP="192.168.56.101"
+LEVEL=11
 
 
 printf -v ACTUAL_LEVEL "level%02d\n" $((LEVEL));
