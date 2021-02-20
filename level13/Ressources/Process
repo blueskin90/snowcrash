@@ -1,0 +1,6 @@
+first we start the program and it says : UID 2013 started us but we we expect 4242
+
+when we objdump -d the executable we see that we do a getuid
+so we use gdb with "gdb level13" then we do a : break getuid
+
+when the break happens we do step, step, step, and see that after the third we get kicked out, so we start again, and do step twice and do a : info all-registers and see that "eax" has the value 2013 in it, so we do : set $eax = 4242 and then we do a step and we get our flag displayed !
