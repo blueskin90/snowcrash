@@ -1,0 +1,9 @@
+first we strace /bin/getflag and see that we get a call to : ptrace (which is used to detect a debugger) so we start gdb and set a breakpoint on ptrace.
+
+Then we run, when we get on the ptrace function breakpoint, we do : step, then we do : return (long)0 so that the program believe we are not in a debugger, then when we continue, we see that we get nothing in here.
+
+So I thought that it did a getuid. So I set another breakpoint on getuid.
+
+to get the correct uid I do : `awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd` which gives me the uid of everyone, and i want to be flag14 so it is 3014.
+
+So we start again do the same to skip the ptrace, and then we get in the getuid, we do : info registers, step,  until we see 2014 in a register, then we change it with : set $eax=3014 and continue and we get our last flag which is : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
