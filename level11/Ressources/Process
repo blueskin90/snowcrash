@@ -4,4 +4,4 @@ it listen on localhost 5151
 
 and then concatenate whatever we send as a password with no treatment between an "echo " and a " | sha1sum"
 
-so we send something like "lol | getflag /tmp/flag" when we send it says erf nope but when we cat /tmp/flag we get the token : fa6v5ateaw21peobuub8ipe6s
+so we send something like "lol | getflag > /tmp/flag" when we send it says erf nope but when we cat /tmp/flag we get the token : fa6v5ateaw21peobuub8ipe6s

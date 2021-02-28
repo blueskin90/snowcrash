@@ -6,6 +6,6 @@ so we know how to make our request, since we know it capitalize everything and d
 
 unfortunately when we run the command with `/tmp/test` it doesnt work due to the fact that /TMP/ does not exists, so we try `/*/test` and it works !
 
-so we go to encode it on meyerweb.co;/eric/tools/dencoder and we get : %60%2F*%2FTEST%60
+so we go to encode it on meyerweb.com/eric/tools/dencoder and we get : %60%2F*%2FTEST%60
 
 so we curl "localhost:4646?x=%60%2F*%2FTEST%60" and when we cat /tmp/flag we get our flag !

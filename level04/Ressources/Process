@@ -1,3 +1,3 @@
-First we cat the file level04.pl we see that it echo the first parameter which is given as a x, and we see that the address is localhost:4747, so we open a browser with the ip of the vm:4242 and add at the end /?x=[whateverwewant] in our case `getflag` this way it display the flag for us
+First we cat the file level04.pl we see that it echo the first parameter which is given as a x, and we see that the address is localhost:4747, so we open a browser with the [ip of the vm]:4747 and add at the end /?x=[whateverwewant] in our case `getflag` this way it display the flag for us
 
-car quand on fait pwd on est dans /var/www/level04 ce n'est donc pas le meme script qui est execute et si on fait un ls -l on peut voir que ce script execute est de l'user flag04 il a donc acces au getflag
+because when we do a pwd instead of a getflag we see that we are in /var/www/level04 so it's not the same script which is executed, and when we do a ls -l we can see that this script is executed as a flag04 user so it does have acces to the correct getflag
