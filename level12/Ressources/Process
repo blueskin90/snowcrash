@@ -2,7 +2,9 @@ we see that it runs on localhost:4646
 
 and takes argument X and pass a few regex on it, first ones capitalize everything, the second one only get the part before first space
 
-so we know how to make our request, since we know it capitalize everything and deletes everything after a space, we assume that no command with arguments will be working, so we know we have to execute a file, but the only part where we can create files is /tmp/ so we try to create a script in /tmp that does "getflag > /tmp/flag" and name it in full capital letters (like TEST)
+so we know how to make our request, since we know it capitalize everything and deletes everything after a space, we assume that no command with arguments will be working, so we know we have to execute a file, but the only part where we can create files is /tmp/ so we try to create a script in /tmp that does:
+getflag > /tmp/flag
+and name it in full capital letters (like TEST) then we chmod 777 on the file
 
 unfortunately when we run the command with `/tmp/test` it doesnt work due to the fact that /TMP/ does not exists, so we try `/*/test` and it works !
 
